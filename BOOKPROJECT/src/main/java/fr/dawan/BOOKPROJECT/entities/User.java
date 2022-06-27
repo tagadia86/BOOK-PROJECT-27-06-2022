@@ -37,12 +37,21 @@ public class User implements UserDetails {
 	
 	private String numPhone;
 	
+	@Column(nullable = false, length = 25)
+	private String firstName;
+	
+	@Column(nullable = false, length = 25)
+	private String lastName;
+	
+	@Column(nullable = false, length = 25)
+	private String email;
+	
 	//A DECOMMENTER
 	//private ChronoLocalDate loginDate = LocalDate.now();
 	
 	//Liste de mapping user-book
-	@OneToMany(mappedBy = "userMapperInBook",cascade = CascadeType.ALL)
-	List<Book> bookListInUser = new ArrayList<>();
+	@OneToMany(mappedBy = "userBook",cascade = CascadeType.ALL)
+	List<Book> booksUser = new ArrayList<>();
 	
 	
 	@Override

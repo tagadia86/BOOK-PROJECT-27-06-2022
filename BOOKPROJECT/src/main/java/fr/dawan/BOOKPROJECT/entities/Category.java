@@ -23,10 +23,48 @@ public class Category implements Serializable {
 	private long id;
 	
 	@Column(nullable = false, name = "category_name")
-	private long categoryName;
+	private String categoryName;
 	
 	//Liste de mapping category-book
 	@ManyToMany
-	List<Book> bookListMapperInCategory = new ArrayList<>();
+	List<Book> booksCategory = new ArrayList<>();
+
+	public Category() {
+		super();
+	}
+
+	public Category(String categoryName, List<Book> booksCategory) {
+		super();
+		this.categoryName = categoryName;
+		this.booksCategory = booksCategory;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
+	public List<Book> getBooksCategory() {
+		return booksCategory;
+	}
+
+	public void setBooksCategory(List<Book> booksCategory) {
+		this.booksCategory = booksCategory;
+	}
+
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", categoryName=" + categoryName + ", booksCategory=" + booksCategory + "]";
+	}
+	
+	
+	
 
 }
