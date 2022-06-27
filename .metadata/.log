@@ -3009,3 +3009,20 @@ java.lang.Exception: Resource '/springboot/src/main/java/fr/dawan/springboot/dto
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.core 4 0 2022-06-27 18:12:52.653
+!MESSAGE An exception occurred during push on URI https://github.com/tagadia86/BOOK-PROJECT-27-06-2022.git: https://github.com/tagadia86/BOOK-PROJECT-27-06-2022.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/tagadia86/BOOK-PROJECT-27-06-2022.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1385)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:254)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-06-27 18:12:52.654
+!MESSAGE Can't connect to any repository: https://github.com/tagadia86/BOOK-PROJECT-27-06-2022.git (https://github.com/tagadia86/BOOK-PROJECT-27-06-2022.git: not authorized)
