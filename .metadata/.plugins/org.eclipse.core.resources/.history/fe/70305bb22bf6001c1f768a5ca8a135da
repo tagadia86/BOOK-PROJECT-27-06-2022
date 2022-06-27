@@ -1,0 +1,17 @@
+package fr.dawan.BOOKPROJECT.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import fr.dawan.BOOKPROJECT.entities.Book;
+
+@Repository
+public interface BookRepository extends JpaRepository<Book, Long> {
+	
+	@Override
+	default <S extends Book> S saveAndFlush(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

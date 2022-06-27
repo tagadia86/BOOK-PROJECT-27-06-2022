@@ -1,0 +1,11 @@
+package fr.dawan.BOOKPROJECT.services;
+
+import fr.dawan.springboot.dto.ProduitDto;
+
+public interface BookService {
+
+}
+
+/*
+  ProduitDto saveOrUpdate(ProduitDto produit);
+ */

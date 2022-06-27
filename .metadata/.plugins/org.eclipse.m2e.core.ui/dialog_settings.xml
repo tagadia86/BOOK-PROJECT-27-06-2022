@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Admin Stagiaire\Documents\DAWAN\SPRINGBOOT-CHRISTOPHE\TOOLS\repo\formation-architecture-microservices-avec-spring-boot_200622"/>
+			<item value="C:\Users\Admin Stagiaire\Documents\DAWAN\SPRINGBOOT-CHRISTOPHE\TOOLS\repo\formation-architecture-microservices-avec-spring-boot_200622\springboot"/>
+			<item value="C:\Users\Admin Stagiaire\Documents\DAWAN\SPRINGBOOT-CHRISTOPHE\WORKSPACE\springboot\formation-architecture-microservices-avec-spring-boot_200622"/>
 			<item value="C:\Users\Admin Stagiaire\Documents\DAWAN\PROJET-LIVRE\PROJET-LIVRES-AVEC-SPRING\v2\formation-architecture-microservices-avec-spring-boot_200622"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -12,5 +15,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

@@ -1,0 +1,7 @@
+package fr.dawan.BOOKPROJECT.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class BookRepository implements JpaRepository<T, ID> {
+
+}

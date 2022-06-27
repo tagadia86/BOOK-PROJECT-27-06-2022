@@ -1,0 +1,16 @@
+1656330169030	Rename type 'BookprojectApplication'
+1656330173180	Rename type 'BookprojectApplicationTests'
+1656330428540	Delete element
+1656330656406	Delete element
+1656330761871	Rename resource 'biblioBanner.txt'
+1656338442983	Delete element
+1656338527182	Delete element
+1656341112971	Delete element
+1656343098851	Rename field 'bookListMapperInAuthor'
+1656345248420	Delete element
+1656345708358	Rename package 'fr.dawan.BOOKPROJECT'
+1656345728920	Rename package 'fr.dawan.BOOKPROJECT.dto'
+1656345751709	Rename package 'fr.dawan.BOOKPROJECT.entities'
+1656345773162	Rename package 'fr.dawan.BOOKPROJECT.enums'
+1656345791921	Rename package 'fr.dawan.BOOKPROJECT.services'
+1656345813691	Rename package 'fr.dawan.BOOKPROJECT.repositories'
