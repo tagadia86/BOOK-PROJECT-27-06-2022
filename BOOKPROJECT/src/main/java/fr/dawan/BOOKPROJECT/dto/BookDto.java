@@ -1,4 +1,4 @@
-package fr.dawan.BOOKPROJECT.dto;
+/*package fr.dawan.BOOKPROJECT.dto;
 
 import java.time.LocalDate;
 
@@ -32,4 +32,4 @@ public class BookDto {
 	
 	 private byte[] image;
 
-}
+}*/
