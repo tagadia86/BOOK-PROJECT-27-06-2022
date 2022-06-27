@@ -1,21 +1,17 @@
 package fr.dawan.BOOKPROJECT.entities;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import fr.dawan.BOOKPROJECT.enums.Country;
 
 
 @Entity
@@ -34,16 +30,56 @@ public class Author implements Serializable {
 	@Column(nullable = false, length = 20)
 	private String lastname;
 
-	@Column(nullable = false)
-	private LocalDate birthdate;
-
-	@Column(nullable = false)
-	@Enumerated(EnumType.STRING)
-	private Country country = Country.FRANCE;
-
 	//Liste de mapping avec author-book
+	//books
 	@ManyToMany
-	private List<Book> bookListMapperInAuthor = new ArrayList<>();
+	private List<Book> books = new ArrayList<>();
+	
+	public Author() {
+		super();
+	}
+
+	public Author(String firstname, String lastname, List<Book> books) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.books = books;
+	}
+
+	public long getId() {
+		return id;
+	}
 
 
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public List<Book> getBooks() {
+		return books;
+	}
+
+	public void setBooks(List<Book> books) {
+		this.books = books;
+	}
+
+	@Override
+	public String toString() {
+		return "Author [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", books=" + books + "]";
+	}
+
+	
+	
 }
