@@ -1024,3 +1024,4 @@ java.net.URISyntaxException: Illegal character in path at index 20: file:/C:/Use
 2022-06-27 18:32:48,592 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2022-06-27 18:32:48,593 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-27 18:32:48,594 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-27 18:32:48,594 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin Stagiaire\Documents\DAWAN\PROJET-LIVRE\BOOKPROJECT-GITHUB\ProjetBook\src\test\resources
