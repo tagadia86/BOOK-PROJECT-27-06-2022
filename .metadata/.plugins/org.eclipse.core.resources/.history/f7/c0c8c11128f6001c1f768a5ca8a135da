@@ -1,5 +1,0 @@
-package fr.dawan.BOOKPROJECT.services;
-
-public interface BookService {
-
-}

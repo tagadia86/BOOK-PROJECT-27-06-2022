@@ -1,5 +1,0 @@
-package fr.dawan.BOOKPROJECT.repositories;
-
-public interface BookRepository {
-
-}
